@@ -1,0 +1,36 @@
+/.bzr/
+/.bzrignore
+
+# Build artifacts:
+*.o
+*~
+
+# Binaries:
+/bigpak/bigpak
+/evolver/evolver
+/L2Stack/L2Stack
+/tetlib/libtet.a
+
+# Autotools artifacts:
+.deps/
+/aclocal.m4
+/autom4te.cache/
+/autoscan.log
+/compile
+/config.guess
+/config.h
+/config.h.in
+/config.log
+/config.status
+/config.sub
+/configure
+/depcomp
+/install-sh
+/libtool
+/missing
+/stamp-h1
+Makefile
+Makefile.in
+
+# Testing:
+/test/

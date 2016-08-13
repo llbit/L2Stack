@@ -1,0 +1,147 @@
+Version 2.0
+	* Compiles on Linux with autoconf/automake
+	* OpenSource
+
+Version 1.97
+	* Autosave
+	* Adaptive frame rate
+
+Version 1.96
+	* Drop effects have been enabled again with a few fixes.
+	* The length of credit rolls is now 61.49 seconds.
+	* Basic AI Versus mode added which lets you play against the game AI.
+	* A couple of GUI bugs were fixed (and new ones probably added in the process).
+	* The "Sprint" game mode now uses a new, brighter, background image.
+	* The rank "bleeding" issue has been fixed.
+
+Version 1.95
+	* Added option for smooth moving pieces.
+	* Added new game mode "M Roll" which simulates the M Roll of TAP/Master.
+	* Added scrollbar to menu screens which otherwise would overflow.
+	* Added DAS speed option to the Sprint menu.
+	* Added hollow ghost rendering option.
+	* Added option to disable ghost piece.
+	* Added option to disable clear animations.
+	* Changed some of the GUI graphics.
+	* In Sprint mode, soft drop is now instant.
+
+Version 1.94
+	* Removed randomizer option from all game modes.
+	* Added new "fading out" death animation to TAP-inspired game modes.
+	* Added section time tracking to "Master" and "Classic" game modes.
+	* Added a credit roll to "Master" and "Classic" game modes.
+	* Added Sonic Lock option to "Master" mode.
+	* Added rotation system option to the config menu which effects all game modes.
+	* Corrected a few timing errors in "Master" mode.
+	* Added grade system to "Master" mode.
+	* Dropped Fmod in favor of SDL Sound.
+	* Sound is now also recorded in AVI output.
+	* Added a couple new sounds and replaced some old ones.
+	* Removed the 20G option from "Sprint" mode.
+
+Version 1.93
+	* Added lighting to 3D blocks.
+	* Improved support for different screen resolutions.
+	* The "Drop Effects" option now works as intended.
+
+Version 1.92
+	* Fixed a bug where on some computers certain fonts would be rendered completely white.
+
+Version 1.91
+	* Fixed a bug in the archive manager which would make the game crash sometimes.
+
+Version 1.9
+	* Added Avi recording capability for Windows version.
+	* Corrected timings in the "Death" and "Classic" game modes.
+	* Added support for multiple preview pieces.
+	* Fixed the Bag randomizer so that it does not restrict which tetromino can be the first one.
+	* Added "Sprint" mode again, with several new options.
+	* Fixed a bug where level was incorrectly incremented after line clear.
+	* Added particle trail animation for soft drop.
+	* Added "Master" game mode.
+	* Added file menu for replays - the game now requires boost::filesystem.
+	* Fixed a bug where the piece was given initial shift.
+	* Added new line clear animaiton with particles.
+
+Version 1.8
+	* Replaced a couple fonts.
+	* The GUI now uses Lua for scripting.
+	* Several new GUI elements and functions added.
+	* Textures of the PNG format are now supported (transparency, yay!).
+	* Better Regex handling.
+	* Removed online mode, to be reimplemented later.
+	* Renamed game mode "20G" to "Death".
+	* Removed the "Sprint" game mode.
+	* Renamed game mode "Master" to "Classic".
+	* Imporved replay file format to better support future game modes and versions.
+	* The game will now ignore sounds it cannot find instead of crashing.
+
+Version 1.7
+	* Added new background images.
+	* Replaced most of the game art and changed several sounds.
+
+Version 1.6
+	* Added a very simple 1v1 online mode.
+
+Version 1.5
+	* The "bag" randomizer now rerolls the first piece until it is not S, Z or O.
+	* Added a background image.
+	* Improved error handling to display an error message ingame for non-fatal errors instead of the game crashing.
+	* The rendering code has been completely rewritten to use OpenGL (still through SDL, though). This should greatly increase performance on most systems.
+	* Added a new line clear animation, which is more similar to the TGM1 line clear animation.
+	* The tetrominoes may now be displayed in 3D, this is enabled / disabled through the ingame menus.
+	* Added 3 frame lockflash animation.
+
+Version 1.31
+	* Renamed the game mode "Death" to "20G".
+	* Unarchived files are read before the archive is searched.
+
+Version 1.3
+	* Game data is now stored in a compressed file format.
+	* Due to some demofile format changes old demos are not compatible.
+
+Version 1.2
+	* Rewrote most of the C++ code to prepare for a multiplayer extension.
+	* Fixed a few stability issues.
+
+Version 1.12
+	* IRS indicator sound is only played if the rotation succeeds.
+
+Version 1.11
+	* Fixed a bug which made tetrominoes not lock in Death Mode with SRS mode while the user was pressing Soft Drop.
+	* Corrected some SRS wallkick issues.
+	* A manual piece locking bonus was added for SRS rotations to emulate the soft bonus of TGM1 gameplay.
+	* Adjusted scoring to round level+lines/4 up, instead of integer truncation.
+
+Version 1.10
+	* Fixed a bug which made the Key options frame save the config file once per frame.
+	* Added a new Options frame which lets the user select rotation mode and randomizer.
+	* Added an SRS rotation system.
+	* Added a Bag randomizer (7 piece bag).
+	* The user may now choose to not save the replay after each game.
+	* Replays are saved in a compressed format. Old replays, saved uncompressed, are still compatible.
+
+Version 1.00
+	* Adjusted some game logic.
+	* The user can now page upwards in the menus using the "UP" directional key.
+	* Support for sounds (with fmod) added!
+
+Version 0.93
+	* Corrected the "TGM" randomizer to not allow S, O or Z as first piece.
+
+Version 0.93
+	* The "Sprint" game mode now shows how many lines are cleared.
+	* Added "Ready", "GO!" screens.
+
+Version 0.92
+	* Fixed some issues which allowed non-ARS moves.
+	* Menu structure redesigned to enable future additions.
+	* Fixed some bugs with replay playback.
+	* Fixed a few errors in the game logic.
+
+Version 0.91
+	* Changed resolution to 800×600.
+	* There is now a fullscreen mode which can be modified in the config file.
+	* The player now enters game keys before the game starts.
+	* Demos are now recorded in a compressed file format.
+	* Some issues with framerate were fixed. The framerate should now be fixed at 60Hz.

@@ -1,0 +1,3 @@
+Everything except the sounds are under GPL v3. Some of the sounds were made by me, others were downloaded from soundsnap.com before they required registration etc. I have no idea how the licensing of the sounds should work.
+
+TODO: Replace the non-GPL sounds

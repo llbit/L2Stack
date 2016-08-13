@@ -1,0 +1,43 @@
+Requirements
+============
+
+* Lua 5.1
+* boost
+* boost-filesystem
+* SDL 1.2
+* SDL-net 1.2
+* SDL-image 1.2
+* PCRE
+
+Install the requirements on debian-based systems
+
+    sudo apt-get install liblua5.1-0-dev libsdl-sound1.2-dev \
+        libsdl-net1.2-dev libsdl-image1.2-dev libpcre3-dev \
+        libboost-dev libboost-filesystem-dev libtool
+
+On Mac OS X using homebrew:
+
+    brew install automake lua51 sdl sdl_sound sdl_net sdl_image boost pcre
+
+On Mac you will also need Xcode for the OpenGL headers and C/C++ compilers.
+
+
+Building
+--------
+
+First, run
+
+    ./autogen.sh
+
+when it is done, you can configure for a release build:
+
+    ./configure
+
+or debug build:
+
+    ./configure CXXFLAGS='-g -O0' CFLAGS='-g -O0'
+
+    make
+    mkdir test
+    ln -s L2Stack/L2Stack test
+    ln -s data test
